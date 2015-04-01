@@ -1,9 +1,5 @@
-# sample
+The `unittest` package has been renamed [`test`][test]. It will export `test`'s
+API through the `0.12.x` branch, but it is deprecated and `test` should be used
+instead.
 
-A library for Dart developers. It is awesome.
-
-## Features and bugs
-
-Please file feature requests and bugs at the [issue tracker][tracker].
-
-[tracker]: https://github.com/dart-lang/sample/issues
+[test]: https://pub.dartlang.org/packages/test
