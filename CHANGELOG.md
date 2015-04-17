@@ -1,3 +1,46 @@
+### 0.12.0-beta.8
+
+* Add support for configuring timeouts on a test, group, and suite basis. Test
+  and group timeouts are configured with the `timeout` named argument; suites
+  are configured using the `@Timeout` annotation. See [the README][timeout] for
+  more information.
+
+[timeout]: https://github.com/dart-lang/test/blob/master/README.md#timeouts
+
+* Support running tests on Safari.
+
+* Add a `--version` flag.
+
+* Add an animation to run in the browser while testing.
+
+### 0.12.0-beta.7
+
+* Browser tests can now load assets by making HTTP requests to the corresponding
+  relative URLs.
+
+* Add support for running tests on Dartium and the Dartium content shell.
+
+* Add support for running tests on [PhantomJS](http://phantomjs.org/).
+
+### 0.12.0-beta.6
+
+* Add the ability to run multiple test suites concurrently. By default a number
+  of concurrent test suites will be run equal to half the machine's processors;
+  this can be controlled with the `--concurrency` flag.
+
+* Expose load errors as test failures rather than having them kill the entire
+  process.
+
+* Add support for running tests on Firefox.
+
+### 0.12.0-beta.5
+
+* Add a `--pub-serve` flag that runs tests against a `pub serve` instance.
+  **This feature is only supported on Dart `1.9.2` and higher.**
+
+* When the test runner is killed prematurely, it will clean up its temporary
+  directories and give the current test a chance to run its `tearDown` logic.
+
 ### 0.12.0-beta.4
 
 * Fix a package-root bug.
