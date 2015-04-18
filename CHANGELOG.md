@@ -1,3 +1,22 @@
+### 0.12.0-beta.9
+
+* A browser test may use a custom HTML file. See [the README][custom html] for
+  more information.
+
+[custom html]: https://github.com/dart-lang/test/blob/master/README.md#running-tests-with-custom-html
+
+* Tests, groups, and suites may be declared as skipped. Tests and groups are
+  skipped using the `skip` named argument; suites are skipped using the `@Skip`
+  annotation. See [the README][skip] for more information.
+
+[skip]: https://github.com/dart-lang/test/blob/master/README.md#skipping-tests
+
+* Fix running VM tests against `pub serve`.
+
+* More gracefully handle browser errors.
+
+* Properly load Dartium from the Dart Editor when possible.
+
 ### 0.12.0-beta.8
 
 * Add support for configuring timeouts on a test, group, and suite basis. Test
