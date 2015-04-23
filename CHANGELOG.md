@@ -1,3 +1,31 @@
+### 0.12.0-rc.0
+
+* Tests, groups, and suites can now be configured on a platform-by-platform
+  basis. Tests and groups are configured using the `onPlatform` named argument;
+  suites are configured using the `@OnPlatform` annotation. See [the
+  README][onPlatform] for more information.
+
+[onPlatform]: https://github.com/dart-lang/test/blob/master/README.md#platform-specific-configuration
+
+* Add a `--reporter` flag and an expanded reporter that prints each test on its
+  own line.
+
+* Properly ignore unrelated `link` tags in custom HTML.
+
+* Preserve the stack traces for load errors in isolates and iframes.
+
+* Stop `pub serve` from emitting a duplicate-asset error for tests with custom
+  HTML files.
+
+* When running a test suite via `dart path/to/test.dart`, throw an exception if
+  the suite fails so that the exit code is set properly.
+
+* Add support for running on Windows and Internet Explorer.
+
+### 0.12.0-beta.10
+
+* Fix running browser tests in subdirectories.
+
 ### 0.12.0-beta.9
 
 * A browser test may use a custom HTML file. See [the README][custom html] for
