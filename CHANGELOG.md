@@ -1,3 +1,23 @@
+## 0.12.3
+
+* If a future matched against the `completes` or `completion()` matcher throws
+  an error, that error is printed directly rather than being wrapped in a
+  string. This allows such errors to be captured using the Zone API and improves
+  formatting.
+
+* Improve support for Polymer tests. This fixes a flaky time-out error and adds
+  support for Dartifying JavaScript stack traces when running Polymer tests via
+  `pub serve`.
+
+* In order to be more extensible, all exception handling within tests now uses
+  the Zone API.
+
+* Add a heartbeat to reset a test's timeout whenever the test interacts with the
+  test infrastructure.
+
+* `expect()`, `expectAsync()`, and `expectAsyncUntil()` throw more useful errors
+  if called outside a test body.
+
 ## 0.12.2
 
 * Convert JavaScript stack traces into Dart stack traces using source maps. This
