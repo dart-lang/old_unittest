@@ -1,3 +1,7 @@
+## 0.12.4
+
+* Depend on `test` 0.12.4.
+
 ## 0.12.3
 
 * If a future matched against the `completes` or `completion()` matcher throws
