@@ -1,3 +1,7 @@
+## 0.12.4+1
+
+* Fix an incorrect use of `@deprecated`.
+
 ## 0.12.4
 
 * Depend on `test` 0.12.4.
